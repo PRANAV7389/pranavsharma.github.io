@@ -1,91 +1,93 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background: linear-gradient(135deg, #f4f4f9, #e8ebf0);
     color: #333;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #4a90e2, #0074d9);
     color: #fff;
-    padding: 1rem 0;
     text-align: center;
+    padding: 1.5rem 0;
 }
 
 header h1 {
+    font-size: 3rem;
     margin: 0;
-    font-size: 2.5rem;
 }
 
-header p {
-    margin: 0.5rem 0 0;
-    font-size: 1.2rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0;
+header nav ul {
     display: flex;
     justify-content: center;
-    background-color: #444;
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    display: block;
-    padding: 0.75rem 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 2rem auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    margin-top: 0;
-    font-size: 2rem;
-    color: #333;
-}
-
-section ul {
-    list-style: none;
+    margin: 1rem 0 0;
     padding: 0;
 }
 
-section ul li {
-    margin: 0.5rem 0;
+header nav ul li {
+    margin: 0 15px;
 }
 
-section ul li a {
-    color: #007bff;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-section ul li a:hover {
-    color: #0056b3;
+header nav ul li a:hover {
+    color: #ffdd57;
 }
 
+/* Section */
+.section {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills span {
+    background: #4a90e2;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
 footer {
+    background: #333;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
-    background-color: #333;
-    color: #fff;
-    margin-top: 2rem;
 }
